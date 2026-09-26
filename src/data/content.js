@@ -145,11 +145,19 @@ export const FAQ = [
     items: [
       {
         q: 'What is Akudo?',
-        a: 'Akudo is a platform in development that helps two people who have already agreed a dollar and naira swap complete it with accountability: both sides fund first, then both are released together.',
+        a: 'Akudo is a platform in development for people who already swap between dollars and naira in their communities. It adds accountability: both sides fund first, then both sides are released together.',
       },
       {
         q: 'Is Akudo available today?',
         a: 'Not yet. Akudo is pre-launch and is not currently offering any services. You can join the waitlist to hear when early access opens.',
+      },
+      {
+        q: 'Who is Akudo for?',
+        a: 'Akudo is for people whose lives sit across countries: family support, school fees, rent, projects, business needs and other everyday reasons people move value between two homes.',
+      },
+      {
+        q: 'Why build Akudo?',
+        a: 'Many peer swaps already happen through friends, family and community chats. Akudo is being built to keep that familiar flow while adding verified profiles, clear terms, deadlines and a shared record.',
       },
       {
         q: 'Does Akudo exchange currency?',
@@ -191,7 +199,11 @@ export const FAQ = [
       },
       {
         q: 'What will Akudo charge?',
-        a: 'Pricing is not final. Our plan is a small, clearly displayed fee per swap, shown before you commit and never hidden inside the rate.',
+        a: 'Akudo does not collect platform fees. The product is designed to be open to everyone, and we do not hide fees inside the rate.',
+      },
+      {
+        q: 'Are there hidden fees or rate markups?',
+        a: 'No. Akudo does not add a spread, change the rate you agreed, or collect hidden charges.',
       },
       {
         q: 'Who holds the money during a swap?',

@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useScroll, useSpring } from 'framer-motion'
-import { Building2, MessageCircle, Sparkles } from 'lucide-react'
+import { Building2, Globe2, MessageCircle, ShieldCheck, Sparkles, Users } from 'lucide-react'
 import { PageHero } from '../components/sections'
 import { Reveal, SectionHead, Stagger, staggerChild, SplitHeading, Eyebrow } from '../components/ui'
 import { ROADMAP } from '../data/content'
@@ -21,6 +21,24 @@ const ROUTES = [
     title: 'The Akudo route',
     body: 'Keep the peer-to-peer swap and the rate you agree together. Add verified people, a shared record, clear deadlines and a release that waits for both sides.',
     hl: true,
+  },
+]
+
+const BUILDING_FOR = [
+  {
+    icon: Users,
+    title: 'People already helping each other',
+    body: 'Family members, friends, classmates, founders and community members already make these swaps. Akudo is for making that exchange clearer and less stressful.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Trust without hidden costs',
+    body: 'We are not building around hidden spreads or surprise charges. The rate should stay the rate both people agreed.',
+  },
+  {
+    icon: Globe2,
+    title: 'Open access from the start',
+    body: 'The goal is a platform that more people can use, starting with the US and Nigeria corridor and learning carefully before expanding.',
   },
 ]
 
@@ -63,6 +81,25 @@ export default function About() {
         <Stagger className="routes">
           {ROUTES.map(({ icon: Icon, title, body, hl }) => (
             <motion.div key={title} variants={staggerChild} className={`route ${hl ? 'route--hl' : ''}`} whileHover={{ y: -6 }}>
+              <span className="principle__icon">
+                <Icon size={22} strokeWidth={1.8} />
+              </span>
+              <h3>{title}</h3>
+              <p>{body}</p>
+            </motion.div>
+          ))}
+        </Stagger>
+      </section>
+
+      <section className="section">
+        <SectionHead
+          eyebrow="What we believe"
+          title={'A swap platform\nshould feel open'}
+          sub="Akudo is being built for everyday peer swaps, not just large transfers or people who can absorb unclear fees."
+        />
+        <Stagger className="routes">
+          {BUILDING_FOR.map(({ icon: Icon, title, body }) => (
+            <motion.div key={title} variants={staggerChild} className="route" whileHover={{ y: -6 }}>
               <span className="principle__icon">
                 <Icon size={22} strokeWidth={1.8} />
               </span>
