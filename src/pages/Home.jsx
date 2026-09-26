@@ -30,7 +30,7 @@ function Hero() {
           Coming soon · US ⇄ Nigeria
         </Pill>
       </motion.div>
-      <SplitHeading text={'Peer Swaps\nSettled Together'} className="hero__title" delay={0.15} />
+      <SplitHeading text={'Peer Swaps,\nSettled Together'} className="hero__title" delay={0.15} />
       <motion.p
         className="hero__sub"
         initial={{ opacity: 0, y: 12 }}
