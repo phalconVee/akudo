@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Check, X, Fingerprint, Lock, Timer, Scale, Eye, ShieldCheck, Flag as FlagIcon } from 'lucide-react'
 import { PageHero } from '../components/sections'
-import { Reveal, SectionHead, Stagger, staggerChild, SplitHeading, Eyebrow, Button } from '../components/ui'
+import { Reveal, SectionHead, Stagger, staggerChild, SplitHeading, Eyebrow, Button, assetPath } from '../components/ui'
 
 const IS = [
   'A coordination layer for swaps two people have already agreed',
@@ -91,7 +91,7 @@ export default function Safety() {
       <section className="section" id="tips">
         <div className="split split--reverse">
           <Reveal className="split__img">
-            <img src="/images/man-phone.jpg" alt="A smiling man looking at his phone" />
+            <img src={assetPath('/images/man-phone.jpg')} alt="A smiling man looking at his phone" />
           </Reveal>
           <div className="split__text">
             <Reveal>

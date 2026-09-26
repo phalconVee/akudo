@@ -9,6 +9,10 @@ import {
 } from 'framer-motion'
 import { ArrowRight, ChevronRight } from 'lucide-react'
 
+export function assetPath(path) {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+}
+
 /* ---------- Logo ---------- */
 export function LogoMark({ size = 22 }) {
   return (
@@ -274,7 +278,7 @@ export function SectionHead({ eyebrow, title, sub, align = 'center', light }) {
 export function Flag({ code, size = 40, name }) {
   return (
     <span className="flag" style={{ width: size, height: size }}>
-      <img src={`/flags/${code}.svg`} alt={name || code.toUpperCase()} loading="lazy" />
+      <img src={assetPath(`/flags/${code}.svg`)} alt={name || code.toUpperCase()} loading="lazy" />
     </span>
   )
 }

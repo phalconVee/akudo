@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { Building2, Globe2, MessageCircle, ShieldCheck, Sparkles, Users } from 'lucide-react'
 import { PageHero } from '../components/sections'
-import { Reveal, SectionHead, Stagger, staggerChild, SplitHeading, Eyebrow } from '../components/ui'
+import { Reveal, SectionHead, Stagger, staggerChild, SplitHeading, Eyebrow, assetPath } from '../components/ui'
 import { ROADMAP } from '../data/content'
 
 const ROUTES = [
@@ -150,7 +150,7 @@ export default function About() {
 
       <section className="section section--tight">
         <Reveal className="portrait-quote">
-          <img src="/images/portrait-afro.jpg" alt="Portrait of a young woman" />
+          <img src={assetPath('/images/portrait-afro.jpg')} alt="Portrait of a young woman" />
           <blockquote>
             <p>“The best swap is the one you don’t have to worry about after you hit send.”</p>
             <footer>The idea behind Akudo</footer>

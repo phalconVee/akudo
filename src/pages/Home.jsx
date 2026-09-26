@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion, useScroll, useTransform } from 'framer-motion'
 import { ArrowUp, ChevronDown, Check } from 'lucide-react'
-import { Button, Pill, Reveal, SplitHeading, TextLink, Tilt, Eyebrow } from '../components/ui'
+import { Button, Pill, Reveal, SplitHeading, TextLink, Tilt, Eyebrow, assetPath } from '../components/ui'
 import SwapWidget from '../components/SwapWidget'
 import { ActivityChart, Corridors, FeatureGrid, StatBlock, Tickets } from '../components/sections'
 import { SectionHead } from '../components/ui'
@@ -85,7 +85,7 @@ function PhotoCards() {
   return (
     <div className="photos">
       <Reveal className="photo photo--portrait" y={40}>
-        <motion.img style={{ y: imgY, scale: 1.12 }} src="/images/hero-portrait.jpg" alt="A smiling young woman" />
+        <motion.img style={{ y: imgY, scale: 1.12 }} src={assetPath('/images/hero-portrait.jpg')} alt="A smiling young woman" />
         <div className="photo__dropdown">
           <button type="button" onClick={() => setMenu((m) => !m)} aria-expanded={menu}>
             {dir}
@@ -135,7 +135,7 @@ function PhotoCards() {
       <Reveal className="photo photo--wide" y={40} delay={0.1}>
         <motion.img
           style={{ y: imgY, scale: 1.12 }}
-          src="/images/hero-friends.jpg"
+          src={assetPath('/images/hero-friends.jpg')}
           alt="Friends laughing together outdoors"
         />
         <div className="photo__shade" />
@@ -219,7 +219,7 @@ function FeaturesPanel() {
         </Reveal>
       </div>
       <Reveal className="features__right" delay={0.1}>
-        <img src="/images/feature-laptop.jpg" alt="A woman using a laptop on her sofa" />
+        <img src={assetPath('/images/feature-laptop.jpg')} alt="A woman using a laptop on her sofa" />
         <ActivityChart />
       </Reveal>
     </section>

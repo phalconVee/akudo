@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Check, Clock, Link2, Search, AlertTriangle, Pause, Play } from 'lucide-react'
 import { PageHero } from '../components/sections'
-import { Button, Reveal, SectionHead, Stagger, staggerChild, Flag, SplitHeading, Eyebrow } from '../components/ui'
+import { Button, Reveal, SectionHead, Stagger, staggerChild, Flag, SplitHeading, Eyebrow, assetPath } from '../components/ui'
 import { STEPS, WHAT_IFS } from '../data/content'
 
 // State of each side for each step index
@@ -196,7 +196,7 @@ export default function HowItWorks() {
       <section className="section">
         <div className="split">
           <Reveal className="split__img">
-            <img src="/images/family.jpg" alt="A family sitting together on a picnic blanket" />
+            <img src={assetPath('/images/family.jpg')} alt="A family sitting together on a picnic blanket" />
           </Reveal>
           <div className="split__text">
             <Reveal>
