@@ -25,9 +25,9 @@
   --r-lg: 24px;
   --r-xl: 32px;
 
-  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --display: 'Inter Tight', 'Inter', system-ui, sans-serif;
-  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --display: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --frame: 28px;
